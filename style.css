@@ -1,0 +1,299 @@
+:root {
+  --cream: #f8f4ed;
+  --cream-dark: #eee5d8;
+  --brown: #765b46;
+  --brown-dark: #4e3b2e;
+  --sage: #8b947c;
+  --text: #4d463f;
+  --white: #fffdf9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.7;
+}
+
+h1, h2, h3, .cover-names, .person-name, .closing-names {
+  font-family: "Playfair Display", serif;
+}
+
+.cover-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 28px 16px;
+  background:
+    linear-gradient(rgba(49, 39, 31, .35), rgba(49, 39, 31, .52)),
+    url("https://images2.alphacoders.com/137/1370954.png") center/cover;
+}
+
+.cover-card {
+  width: min(100%, 540px);
+  padding: clamp(24px, 5vw, 48px);
+  border: 1px solid rgba(255, 255, 255, .7);
+  background: rgba(255, 253, 249, .94);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .18);
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  color: var(--sage);
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .2em;
+}
+
+.cover-names {
+  margin: 0 0 8px;
+  color: var(--brown-dark);
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  line-height: 1.15;
+}
+
+.cover-names span,
+.ampersand {
+  color: var(--sage);
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+.cover-date {
+  margin-bottom: 24px;
+  font-size: .95rem;
+}
+
+.cover-photo {
+  display: block;
+  width: min(100%, 320px);
+  height: 240px;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.guest-name {
+  color: var(--brown);
+  font-weight: 600;
+}
+
+.btn-earth {
+  padding: 11px 22px;
+  border: 1px solid var(--brown);
+  border-radius: 0;
+  background: var(--brown);
+  color: white;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.btn-earth:hover,
+.btn-earth:focus {
+  border-color: var(--brown-dark);
+  background: var(--brown-dark);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.section-pad {
+  padding: clamp(56px, 8vw, 100px) 20px;
+}
+
+.hero-section {
+  background: var(--white);
+}
+
+.intro-copy,
+.closing-copy,
+.section-subtitle {
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+.couple-row {
+  max-width: 1000px;
+  margin: 20px auto 0;
+}
+
+.person-photo {
+  width: 210px;
+  height: 250px;
+  max-width: 100%;
+  border-radius: 120px 120px 4px 4px;
+  object-fit: cover;
+  box-shadow: 0 10px 28px rgba(76, 57, 41, .12);
+}
+
+.person-name {
+  margin: 20px 0 5px;
+  color: var(--brown-dark);
+  font-size: 2rem;
+}
+
+.person-detail {
+  margin-bottom: 0;
+  color: #756b61;
+  font-size: .9rem;
+}
+
+.ampersand {
+  font-size: 3rem;
+}
+
+.quote-section {
+  background: var(--cream-dark);
+}
+
+.quote {
+  max-width: 740px;
+  margin: 0 auto 12px;
+  color: var(--brown-dark);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.25rem, 3vw, 1.8rem);
+  font-style: italic;
+}
+
+.quote-source {
+  color: var(--brown);
+  font-size: .9rem;
+}
+
+.event-section {
+  background: var(--white);
+}
+
+.section-title {
+  margin-bottom: 16px;
+  color: var(--brown-dark);
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.event-date {
+  margin-bottom: 25px;
+  color: var(--brown);
+  font-weight: 600;
+}
+
+.count-box {
+  display: flex;
+  min-width: 68px;
+  flex-direction: column;
+  padding: 12px 10px;
+  border: 1px solid #d8cabb;
+  background: var(--cream);
+}
+
+.count-box span {
+  color: var(--brown-dark);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.count-box small {
+  color: #756b61;
+  font-size: .75rem;
+}
+
+.event-card {
+  padding: 30px 22px;
+  border: 1px solid #e3d7c8;
+  background: var(--cream);
+}
+
+.event-icon {
+  margin-bottom: 8px;
+  color: var(--sage);
+  font-size: 2rem;
+}
+
+.event-card h3 {
+  margin-bottom: 16px;
+  color: var(--brown-dark);
+  font-size: 1.7rem;
+}
+
+.event-card p {
+  margin-bottom: 8px;
+  font-size: .92rem;
+}
+
+.gallery-section {
+  background: var(--cream-dark);
+}
+
+.gallery-photo {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+
+.gallery-photo:hover {
+  transform: scale(1.02);
+}
+
+.closing-section {
+  background: var(--white);
+}
+
+.closing-greeting {
+  margin-top: 28px;
+  font-size: .9rem;
+}
+
+.closing-names {
+  margin-bottom: 0;
+  color: var(--brown);
+  font-size: 2.3rem;
+}
+
+.footer {
+  padding: 18px 12px;
+  background: var(--brown-dark);
+  color: #f8f4ed;
+  font-size: .8rem;
+}
+
+@media (max-width: 575.98px) {
+  .cover-card {
+    padding: 26px 20px;
+  }
+
+  .cover-photo {
+    height: 210px;
+  }
+
+  .person-photo {
+    width: 180px;
+    height: 220px;
+  }
+
+  .ampersand {
+    margin: -12px 0;
+    font-size: 2.3rem;
+  }
+
+  .count-box {
+    min-width: 58px;
+    padding: 10px 6px;
+  }
+
+  .count-box span {
+    font-size: 1.25rem;
+  }
+
+  .gallery-photo {
+    height: 210px;
+  }
+}
