@@ -2,12 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const cover = document.getElementById("cover");
   const invitation = document.getElementById("invitation");
   const openButton = document.getElementById("openInvitation");
+  const backsound = document.getElementById("backsound");
 
   // Tombol "Buka Undangan" menyembunyikan sampul dan menampilkan isi undangan.
   openButton.addEventListener("click", () => {
     cover.classList.add("d-none");
     invitation.classList.remove("d-none");
     document.body.classList.add("invitation-open");
+    backsound.play();
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
